@@ -1,0 +1,26 @@
+version = 1
+
+[[analyzers]]
+name = "docker"
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "react",
+    "angular",
+    "vue"
+  ]
+  environment = [
+    "nodejs",
+    "browser",
+    "mongo",
+    "jquery"
+  ]
+
+[[analyzers]]
+name = "php"
+
+[[transformers]]
+name = "php-cs-fixer"
